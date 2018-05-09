@@ -21,6 +21,10 @@ import FPSLabel
 FPSLabel.install(on: self.window) 
 ```
 
+### Demo
+![Image](https://github.com/qkzhu/FPSLabel/blob/master/FPSLabelDemo/Images/demo.gif)
+
+
 ### Reference
 * [YYKit](https://github.com/ibireme/YYKit) 
 * [iOS Project](https://github.com/NJHu/iOSProject.git).
