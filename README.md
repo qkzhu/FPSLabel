@@ -7,9 +7,10 @@
 A tiny library provides a draggble label that display FPS.
 
 ### Installation
-```pod
-pod 'FPSLabel'
-```
+1. Run `pod repo update` to make CocoaPods aware of the latest available FPSLabel versions.
+2. In your Podfile, add `pod 'FPSLabel'` to your main and test targets.
+3. From the command line, run `pod install`.
+
 
 ### How to use
 From `AppDelegate`, inside `didFinishLaunchingWithOptions`
