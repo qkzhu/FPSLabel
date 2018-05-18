@@ -29,11 +29,13 @@ const CGFloat topPadding = 80;
 #pragma mark - life cycle
 + (void)installOnWindow:(UIWindow *)window
 {
+#if DEBUG
     if (!window || ![window isKindOfClass:[UIWindow class]]) { return; }
     
     [window makeKeyAndVisible];
     FPSLabel *fpsLabel = [[FPSLabel alloc] initWithFrame:CGRectMake(hPadding, topPadding, 0, 0)];
     [window addSubview:fpsLabel];
+#endif
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -61,7 +63,7 @@ const CGFloat topPadding = 80;
 - (void)commonInit
 {
     self.layer.cornerRadius = 5;
-    self.layer.zPosition = CGFLOAT_MAX; //make label on ways on the most top.
+    self.layer.zPosition = MAXFLOAT; //make label on ways on the most top.
     
     self.clipsToBounds = YES;
     self.textAlignment = NSTextAlignmentCenter;
