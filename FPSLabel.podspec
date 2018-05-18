@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FPSLabel"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A draggble label that display FPS."                 
   s.homepage     = "https://github.com/qkzhu/FPSLabel"
   s.license      = { :type => 'MIT' }
